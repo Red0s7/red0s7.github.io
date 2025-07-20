@@ -9,8 +9,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script>
+        document.addEventListener('keydown', function(event) {
+        if (event.key === '`') {
+            window.location.href = 'main.html';
+        }
+        });
+    </script>
+    <style>
+        body {
+            display:flex;
+            flex-direction: column;
+            min-height: 100vh;
+            text-align: center;
+            font-family: 'Roboto Mono', sans-serif;
+            background-color: #222222;
+            color: #ffffff;
+            margin: 0;
+        }
+        h1 {
+            font-size: 3em;
+        }
 
-    <script src="index.js" defer></script>
+        footer {
+            margin-top: auto;  
+            padding: .8em;
+            color: #b6b5b5;
+            background-color: #333333;
+        }
+
+        #pmo {
+            margin: 0;
+            padding: 10px;
+            background-color: #333333;
+        }
+    </style>
 </head>
 <body>
     <main>
