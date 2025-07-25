@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', serif;
+}
+
+body {
+    height: 100%;
+}
+main {
+    background: linear-gradient(to bottom, rgb(49, 207, 67), rgb(135, 190, 142));
+    min-height: 93vh;
+    max-height: 93vh;
+}
+
+header {
+    background-color: rgb(49, 207, 67);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+    height: 7vh
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    box-sizing: content-box;
+}
+
+#h1name {
+    font-size: 2rem;
+    margin: 0px 10px;
+}
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+
+.top-nav a{
+    right: 0;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+hr {
+    border: none;
+    height: .2rem;
+    background-color: rgb(36, 158, 51);
+    margin: 0;
+}
