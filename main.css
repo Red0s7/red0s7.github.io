@@ -8,10 +8,15 @@
 body {
     height: 100%;
 }
+
 main {
-    background: linear-gradient(to bottom, rgb(49, 207, 67), rgb(135, 190, 142));
-    min-height: 93vh;
-    max-height: 93vh;
+    background: linear-gradient(to bottom, rgb(49, 207, 67), rgb(129, 224, 142));
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 6.45vh - 0.55vh); /* header + hr height */
+    max-height: none;
 }
 
 header {
@@ -22,7 +27,30 @@ header {
     justify-content: flex-start;
     width: 100%;
     align-items: center;
-    height: 7vh
+    height: 6.45vh
+}
+
+
+.top-nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    align-items: center;
+}
+
+#search-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50px;
+}
+
+.top-nav a{
+    right: 0;
+    color: white;
+    padding: 10px 10px;
+    text-decoration: none;
 }
 
 .logo {
@@ -36,24 +64,9 @@ header {
     margin: 0px 10px;
 }
 
-.top-nav {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    align-items: center;
-}
-
-
-.top-nav a{
-    right: 0;
-    color: white;
-    padding: 10px 10px;
-    text-decoration: none;
-}
-
 hr {
     border: none;
-    height: .2rem;
-    background-color: rgb(36, 158, 51);
+    height: .55vh;
+    background-color: rgb(38, 181, 55);
     margin: 0;
 }
