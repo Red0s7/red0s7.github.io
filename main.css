@@ -52,7 +52,7 @@ header {
     color: white;
     padding: 10px 10px;
     text-decoration: none;
-    font-size: min(.7rem, 1rem)
+    font-size: 1rem;
 }
 
 .logo {
@@ -64,7 +64,6 @@ header {
 #h1name {
     font-size: 2rem;
     margin: 0px 10px;
-    font-size: min(.5rem, 1rem)
 }
 
 hr {
@@ -72,4 +71,13 @@ hr {
     height: .55vh;
     background-color: rgb(38, 181, 55);
     margin: 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .top-nav a {
+     font-size: .8rem;
+  }
+  #h1name {
+     font-size: 1.3rem;
+  }
 }
