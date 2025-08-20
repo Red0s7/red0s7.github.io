@@ -14,8 +14,6 @@ main {
     background: linear-gradient(to bottom, rgb(49, 207, 67), rgb(129, 224, 142));
     flex: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: calc(100vh - 6.45vh - 0.55vh); /* header + hr height */
     max-height: none;
 }
@@ -23,7 +21,6 @@ main {
 header {
     background-color: rgb(49, 207, 67);
     color: white;
-    padding: 10px;
     display: flex;
     justify-content: flex-start;
     width: 100%;
@@ -39,21 +36,66 @@ header {
     width: 100%;
     align-items: center;
     height: 100%;
+    padding-right: 10px;
+}
+.game-button {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+    border-radius: 51px;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 15px #00ffcc;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 
-#search-form {
+.game-button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 25px #00ffcc;
+}
+
+.game-button img:hover {
+    filter: brightness(0.8) blur(2px);
+}
+
+.game-button img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+#motd {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
-    height: 50px;
+    width: 20%;
+    height: 20%;
+    border-radius: 20px;
+    border-color:rgb(38, 181, 55);
+    border-style: solid;
+    border-width: 2px;
+    box-shadow: 0 0 20px 5px rgba(38, 181, 55);
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.top-nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 .top-nav a{
     right: 0;
+    display: flex;
     color: white;
-    padding: 10px 10px;
+    padding: 0px 10px;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
     font-size: 1rem;
     height: 100%;
 }
@@ -83,4 +125,9 @@ hr {
   #h1name {
      font-size: 1.3rem;
   }
+}
+
+.top-nav a:hover {
+    transition: color .2s ease;
+    color: rgb(218, 218, 218);
 }
