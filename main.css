@@ -127,7 +127,7 @@ header {
     width: 63px; /* 60px + 2*2px border */
     height: 37px; /* 34px + 2*2px border */
     box-sizing: border-box;
-    border: 2px solid #ffffff; /* Add border here */
+    border: 2px solid #000000; /* Add border here */
     border-radius: 34px;
     background: transparent;
 }
@@ -158,7 +158,7 @@ header {
     border-radius: 50%;
 }
 .switch input:checked + .slider {
-    background-color: #26b537;
+    background-color: #2edd43;
 }
 .switch input:checked + .slider:before {
     transform: translateX(26px);
