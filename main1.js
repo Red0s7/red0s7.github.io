@@ -15,7 +15,6 @@ function updateLinks(addSuffix) {
                 link.setAttribute('href', href + '?scrlcbp=.');
             }
         } else {
-            // Remove the suffix if present
             link.setAttribute('href', href.replace('?scrlcbp=.', ''));
         }
     });
@@ -23,7 +22,7 @@ function updateLinks(addSuffix) {
 
 const scbypss = document.querySelector("#scbypss");
 
-// Restore toggle state from localStorage
+
 if (localStorage.getItem('scbypssChecked') === 'true') {
     scbypss.checked = true;
     updateLinks(true);
@@ -31,7 +30,6 @@ if (localStorage.getItem('scbypssChecked') === 'true') {
     updateLinks(false);
 }
 
-// Listen for changes
 scbypss.addEventListener('change', function() {
     localStorage.setItem('scbypssChecked', scbypss.checked);
     updateLinks(scbypss.checked);
